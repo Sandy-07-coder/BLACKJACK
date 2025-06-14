@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* COLOR */
+    --BGCOLOR:#016f32;
+    --COLOR:white;
+    --HEADERCOLOR:rgb(218, 165, 32);
+    --HEADER-BGCOLOR1:#002910;
+    --HEADER-BGCOLOR2:#014c23;
+    --BUTTON-COLOR:rgb(218, 165, 32);
+
+    /* FONT */
+    --FF:"Poppins", sans-serif;
+    --FS-M:1.5rem;
+    --FS-L:2rem;
+    --FS-S:1.15rem;
+
+}
+
+body{
+    background-color: var(--BGCOLOR);
+    font-family: var(--FF);
+    color: var(--COLOR);
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    color: var(--HEADERCOLOR);
+    font-weight: bolder;
+    font-size: var(--FS-M);
+    text-align: center;
+}
+header h1{
+    background-color: var(--HEADER-BGCOLOR1);
+    width: 100vw;
+    color: white;
+
+}
+
+header h2{
+    background-color:var(--HEADER-BGCOLOR2);
+    color: #FFD700;
+}
+
+aside{
+    position: fixed;
+    right: 0;
+    top: 125px;
+    border:  2px solid black;
+    
+}
+
+div{
+    margin-top: 1.5rem;
+    font-size: var(--FS-M);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    font-weight: 500;
+
+}
+
+div p{
+    text-align: center;
+}
+
+.section01{
+    margin:1.5rem 0;
+    display: flex;
+    flex-flow:  row nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.section01 button{
+    padding: 0.75rem;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    font-size: var(--FS-S);
+    cursor: pointer;
+}
+
+article{
+    display: inline-block;
+    border: 2px solid black;
+    font-size: var(--FS-M);
+    border: none;
+    border-radius: 1rem;
+    background-color: #77DD77;
+    margin: 0 2rem;
+    padding: 5px;
+    
+}
+
+article p{
+    font-weight: 500;
+    color: black;
+
+}
+
+
+.section02{
+    margin-top: 5rem;
+    border: 2px black solid;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
+
+.section02 p,.section02 button{
+    font-size: var(--FS-M);
+    border: 2px solid red;
+    padding: 5px;
+    border: none;
+    background-color: #87CEFA;
+    color: #333333 ;
+    border-radius: 2.5rem;
+    font-weight: 600;
+}
+
+.section02 button{
+    background-color:skyblue;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 5px double white;
+}
+
+button:active{
+    border: 4px orange double;
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color:#222;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+
